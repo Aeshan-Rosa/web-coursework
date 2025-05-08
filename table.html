@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Under Water - Global Ocean Pollution</title>
+    <link rel="stylesheet" href="css/table.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Student 02/home.html">Home</a></li>
+                    <li><a href="../Student 01/volunteer.html">Volunteer</a></li>
+                    <li><a href="../Student 02/table.html" class="active">Table</a></li>
+                    <li><a href="../Student 04/profile.html">Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 03/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 id="main-heading">🌊Global Ocean Pollution</h1>
+    <section class="intro">
+        
+        <p><strong> Ocean pollution poses significant threats to marine ecosystems and human health.</strong></p>
+        <p><strong>Here's an overview of the current state of our oceans:</strong></p>
+        
+    <div class="sub_box">     
+    <div class="div_box">
+
+        <h2 class="left-align">Key Statistics: </h2>
+        <ul class="left-align">
+            <li><strong>Plastic Pollution: </strong>Approximately 150 million tonnes of plastic waste were present in the oceans as of 2016, with projections suggesting this could rise to 250 million tonnes by 2025.</li>
+            <li><strong>Microplastics: </strong>Defined as plastic pieces smaller than five millimeters, microplastics have been detected in various marine environments, including the deepest ocean trenches.</li>
+            <li><strong>Major Sources: </strong>The largest single type of plastic pollution (~10%) and majority of large plastic in the oceans is discarded and lost nets from the fishing industry.</li>
+        </ul>
+
+    </div>
+
+    <!-- ----------------- -->
+
+    <div class="div_box">
+
+        <h2 class="left-align">Major Threats: </h2>
+        <ul class="left-align">
+            <li><strong>Marine Life: </strong>Plastic debris, including microplastics, poses significant threats to marine organisms through ingestion and entanglement, leading to injury or death.</li>
+            <li><strong>Human Health: </strong>Microplastics have been found in seafood consumed by humans, raising concerns about potential health risks.</li>
+            <li><strong>Economic Impact: </strong> Ocean pollution affects tourism, fisheries, and maritime industries, leading to substantial economic losses.</li>
+        </ul>
+
+    </div>
+
+        <!-- ----------------- -->
+
+    <div class="div_box">
+
+        <h2 class="left-align">Notable Pollution Zones: </h2>
+        <ul class="left-align">
+            <li><strong>Great Pacific Garbage Patch: </strong>This area in the North Pacific Ocean has seen a tenfold increase in microplastic concentration between 2015 and 2022, accumulating up to 10 million microparticles per square kilometer.</li>
+        </ul>
+
+    </div>
+
+            <!-- ----------------- -->
+
+    <div class="div_box">
+
+        <h2 class="left-align">Recent Developments: </h2>
+        <ul class="left-align">
+            <li><strong>Innovative Solutions: </strong>Researchers have developed a sponge made from cotton and squid bone capable of absorbing 99.9% of microplastics from water, offering a potential tool for mitigating pollution. </li>
+            <li><strong>Global Initiatives: </strong>International efforts, including the UN's global plastics treaty, aim to reduce plastic waste entering the oceans through improved waste management and reduction in plastic production.</li>
+        </ul>
+    </div>
+    </div>
+
+<!-- <p class="left-align">Addressing global ocean pollution requires concerted efforts from governments, industries, and individuals to reduce plastic usage, improve waste management, and support innovative cleanup technologies.</p> -->
+
+<div class="table-box">
+    <p>Check out the below table to get an idea about the pollution of each ocean in the world</p>
+    <p>Click on table rows to see more information...</p>
+</div>
+
+    </section>
+
+    <section class="table-container">
+        <h2>Ocean Pollution Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Ocean Region</th>
+                    <th rowspan="2">Marine Protected Areas(%)</th>
+                    <th colspan="2">Pollution Levels</th>
+                    <th rowspan="2">Major Threats</th>
+                </tr>
+                <tr>
+                    <th>Annual Plastic Waste (Million Metric Tons)</th>
+                    <th>Notable Oil Spills(Year)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="showModal('pacific')">
+                    <td><span>Pacific Ocean</span></td>
+                    <td>8.4%</td>
+                    <td class="critical">1.8</td>
+                    <td>Exxon Valdez (1989)</td>
+                    <td>Overfishing, Industrial Waste, Microplastics</td>
+                </tr>
+                <tr onclick="showModal('atlantic')">
+                    <td><span>Atlantic Ocean</span></td>
+                    <td>17.6%</td>
+                    <td class="high">1.3</td>
+                    <td>Deepwater Horizon (2010)</td>
+                    <td>Coral Bleaching, Plastic Waste, Industrial Waste</td>
+                </tr>
+                <tr onclick="showModal('indian')">
+                    <td><span>Indian Ocean</span></td>
+                    <td>7.2%</td>
+                    <td class="moderate">0.6</td>
+                    <td>MV Wakashio (2020)</td>
+                    <td>Overfishing, Plastic Pollution, Illegal Fishing</td>
+                </tr>
+                <tr onclick="showModal('arctic')">
+                    <td><span>Arctic Ocean</span></td>
+                    <td>4.1%</td>
+                    <td class="low">0.1</td>
+                    <td>N/A</td>
+                    <td>Ice Breakage, Global Current</td>
+                </tr>
+                <tr onclick="showModal('southern')">
+                    <td><span>Southern Ocean</span></td>
+                    <td>5%</td>
+                    <td class="low">0.04</td>
+                    <td>N/A</td>
+                    <td>Climate Change, Overfishing</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Data sourced from Marine Conservation Reports.</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="pacific" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pacific')">&times;</span>
+            <h1>Pacific Ocean</h1>
+            <img src="images/Pacific.png" alt="Pacific">
+            <ul class="spaced-list">
+                <li><strong>Marine Protected Areas (MPAs):</strong> The Pacific has some of the world's largest MPAs, such as the Papahānaumokuākea Marine National Monument in Hawaii. However, enforcement in international waters remains a challenge.</li>
+                <li><strong>Plastic Waste:</strong> The Great Pacific Garbage Patch, located between Hawaii and California, contains an estimated 1.8 trillion plastic pieces. Microplastics in this region affect marine species like fish and plankton, entering the global food web.</li>
+                <li><strong>Notable Oil Spill:</strong> The Exxon Valdez spill in 1989 was a wake-up call for oil transport safety. The spill affected over 1,300 miles of coastline and killed thousands of marine animals, including sea otters and birds.</li>
+                <li><strong>Major Threats:</strong> Overfishing in the Pacific impacts tuna populations, while industrial waste, including agricultural runoff, contributes to dead zones, particularly along the coasts of the U.S. and China. Microplastics disrupt marine life, including coral reefs and deep-sea ecosystems.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="atlantic" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('atlantic')">&times;</span>
+            <h1>Atlantic Ocean</h1>
+            <img src="images/Atlantic.png" alt="Atlantic">
+            <ul class="spaced-list">
+                <li><strong>Marine Protected Areas (MPAs):</strong> The Atlantic has made strides in conservation, with areas like the Sargasso Sea providing critical habitats for eels and other species. However, the effectiveness of MPAs varies widely.</li>
+                <li><strong>Plastic Waste:</strong> The Atlantic Ocean's plastic pollution is often underestimated. Studies have found that the deep sea holds much of the plastic, impacting bottom-dwelling species.</li>
+                <li><strong>Notable Oil Spill:</strong> The Deepwater Horizon disaster released approximately 210 million gallons of oil. Long-term effects include deformities in fish species and declines in dolphin populations along the Gulf Coast.</li>
+                <li><strong>Major Threats:</strong> Coral bleaching, particularly in the Caribbean, has led to a significant loss of coral cover. The Atlantic is also a hotspot for industrial waste, including toxic chemicals and heavy metals from river runoff.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="indian" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('indian')">&times;</span>
+            <h1>Indian Ocean</h1>
+            <img src="images/Indian.png" alt="Indian">
+            <ul class="spaced-list">
+                <li><strong>Marine Protected Areas (MPAs):</strong> The Indian Ocean's MPAs focus on coral reefs and mangrove forests, crucial for local fisheries and coastal protection. However, enforcement is often weak due to limited resources.</li>
+                <li><strong>Plastic Waste:</strong> Many coastal nations bordering the Indian Ocean lack effective waste management systems, contributing to high plastic leakage into the sea. Fishing nets and gear also add to marine debris.</li>
+                <li><strong>Notable Oil Spill:</strong> The MV Wakashio spill in 2020 spilled about 1,000 metric tons of oil near Mauritius, damaging coral reefs and mangroves. The spill highlighted the vulnerability of small island nations to maritime disasters.</li>
+                <li><strong>Major Threats:</strong> Illegal, unreported, and unregulated (IUU) fishing in the Indian Ocean depletes fish stocks and undermines local fisheries. Plastic pollution is a growing issue, with microplastics found in seafood consumed by humans.</li>
+            </ul>            
+        </div>
+    </div>
+
+    <div id="arctic" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('arctic')">&times;</span>
+            <h1>Arctic Ocean</h1>
+            <img src="images/Arctic.png" alt="Arctic">
+            <ul class="spaced-list">
+                <li><strong>Marine Protected Areas (MPAs):</strong> The Arctic's MPAs aim to preserve unique cold-water ecosystems. However, melting ice opens new areas to shipping and oil exploration, threatening fragile habitats.</li>
+                <li><strong>Plastic Waste:</strong> Microplastics have been found even in the remote Arctic ice. As ice melts, trapped plastics are released into the water, posing a risk to species like polar bears and seals.</li>
+                <li><strong>Notable Oil Spill:</strong> While there have been no major recorded spills, the Arctic remains at high risk from potential accidents involving oil and gas operations. Harsh conditions make spill response challenging.</li>
+                <li><strong>Major Threats:</strong> Melting sea ice disrupts the habitat of iconic species like walruses and polar bears. Changes in global currents also affect climate patterns worldwide, demonstrating the Arctic's critical role in the Earth's climate system.</li>
+            </ul>            
+        </div>
+    </div>
+
+    <div id="southern" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('southern')">&times;</span>
+            <h1>Southern Ocean</h1>
+            <img src="images/Southern.png" alt="Southern">
+            <ul class="spaced-list">
+                <li><strong>Marine Protected Areas (MPAs):</strong> The Southern Ocean’s MPAs, including areas managed under the Convention for the Conservation of Antarctic Marine Living Resources (CCAMLR), help protect species like krill and penguins. However, reaching conservation targets is challenging due to geopolitical interests.</li>
+                <li><strong>Plastic Waste:</strong> While the Southern Ocean has lower plastic pollution levels, debris from distant sources still reaches its waters through ocean currents. This impacts local wildlife, including seabirds that ingest plastic.</li>
+                <li><strong>Notable Oil Spill:</strong> No significant oil spills have been recorded, but increasing shipping and potential resource exploration pose a risk. The extreme environment would complicate cleanup efforts.</li>
+                <li><strong>Major Threats:</strong> The Southern Ocean is a critical buffer against climate change, absorbing a large portion of the world's carbon dioxide. Overfishing, particularly of krill, threatens the stability of the Antarctic food web. The melting of Antarctic ice sheets contributes to global sea level rise.</li>
+            </ul>            
+        </div>
+    </div>
+
+    <script src="js/table.js"></script> 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/WHO/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=world+health+organization">YouTube</a></li>
+                    <li><a href="https://x.com/WHO">X</a></li>
+                    <li><a href="https://www.instagram.com/who/?hl=en">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Content Pages</h3>
+                <ul>
+                    <li><a href="../Student 01/Content_ST1.html">Content Page 01</a></li>
+                    <li><a href="../Student 02/Content_ST2.html">Content Page 02</a></li>
+                    <li><a href="../Student 03/content.html">Content Page 03</a></li>
+                    <li><a href="../Student 04/Content_ST4.html">Content Page 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Validation Pages</h3>
+                <ul>
+                    <li><a href="../Student 01/validation_ST1.html">Validation Page 01</a></li>
+                    <li><a href="../Student 02/validation_ST2.html">Validation Page 02</a></li>
+                    <li><a href="../Student 03/validation_ST3.html">Validation Page 03</a></li>
+                    <li><a href="../Student 04/validation_ST4.html">Validation Page 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Other Links</h3>
+                <ul>
+                    <li><a href="../Student 01/volunteer.html">Volunteer Page</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">User Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 01/pageEditor_ST1.html">Editor Page</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Editor</h3>
+                <ul>
+                    <li><a href="../Student 01/pageEditor_ST1.html">Student 1 Editor</a></li>
+                    <li><a href="../Student 02/pageEditor_ST2.html">Student 2 Editor</a></li>
+                    <li><a href="../Student 03/pageEditor_ST3.html">Student 3 Editor</a></li>
+                    <li><a href="../Student 04/pageEditor_ST4.html">Student 4 Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Volunteer Program</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Life Below Water</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/feedback.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Student 02/home.html">Home</a></li>
+                    <li><a href="../Student 01/volunteer.html">Volunteer</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">Profile</a></li>
+                    <li><a href="../Student 03/feedback.html" class="active">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 03/team.html">Team</a></li>
+                </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h2>Share Your Feedback</h2>
+            <p>Your insights help us improve our  efforts. Please take a moment to share your thoughts with us.</p>
+            
+            <form class="feedback-form" action="#" method="post">
+                
+                <!-- Personal Information Fieldset - Blue -->
+                <fieldset class="personal-info">
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="full-name" class="required">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required maxlength="100" title="Please enter your full name" placeholder="Input username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" id="email" name="email" required title="Please enter a valid email address" placeholder="Input your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telephone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" title="Please enter a valid phone number (10-15 digits)" placeholder="Input your phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Input your address"></textarea>
+                    </div>
+                </fieldset>
+                
+                <!-- Feedback Details Fieldset - Green -->
+                <fieldset class="feedback-details">
+                    <legend>Feedback Details</legend>
+                    
+                    <div class="form-group">
+                        <label for="feedback-type" class="required">Type of Feedback</label>
+                        <select id="feedback-type" name="feedback-type" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="question">Question</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="conservation-areas">Areas of Conservation Interest</label>
+                        <select id="conservation-areas" name="conservation-areas[]" multiple>
+                            <option value="coral-reefs">Coral Reef Protection</option>
+                            <option value="plastic-pollution">Plastic Pollution Reduction</option>
+                            <option value="sustainable-fishing">Sustainable Fishing</option>
+                            <option value="marine-protected-areas">Marine Protected Areas</option>
+                            <option value="ocean-acidification">Ocean Acidification</option>
+                            <option value="coastal-ecosystems">Coastal Ecosystems</option>
+                            <option value="marine-species">Endangered Marine Species</option>
+                        </select>
+                        
+                    </div>
+                    
+                    
+                    
+                    <div class="form-group">
+                        <label for="message" class="required">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
+                        <div class="char-counter">500 characters remaining</div>
+                    </div>
+                </fieldset>
+                
+                <!-- Experience Fieldset - Royal Blue -->
+                <fieldset class="experience">
+                    <legend>Your Experience</legend>
+                    
+                    <div class="form-group">
+                        <label>How did you hear about us?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="source[]" value="social-media"> Social Media</label>
+                            <label><input type="checkbox" name="source[]" value="search-engine"> Search Engine</label>
+                            <label><input type="checkbox" name="source[]" value="friend"> Friend or Family</label>
+                            <label><input type="checkbox" name="source[]" value="event"> Event or Conference</label>
+                            <label><input type="checkbox" name="source[]" value="other"> Other</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Have you participated in any marine conservation activities?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="participated" value="yes"> Yes</label>
+                            <label><input type="radio" name="participated" value="no"> No</label>
+                            <label><input type="radio" name="participated" value="not-sure"> Not Sure</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="visit-date">When did you last visit our website?</label>
+                        <input type="date" id="visit-date" name="visit-date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="meeting-time">Preferred time for follow-up (if needed)</label>
+                        <input type="datetime-local" id="meeting-time" name="meeting-time">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Rate your experience </label>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" title="Excellent"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" title="Very Good"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" title="Good"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" title="Fair"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" title="Poor"></label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <!-- Attachments Fieldset - Light Blue -->
+                <fieldset class="attachments">
+                    <legend>Attachments</legend>
+                    
+                    <div class="form-group">
+                        <label for="file-upload">Upload a relevant file (optional)</label>
+                        <input type="file" id="file-upload" name="file-upload">
+                        <small>Max file size: 5MB. Accepted formats: .jpg, .png, .pdf</small>
+                    </div>
+                </fieldset>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/WHO/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=world+health+organization">YouTube</a></li>
+                    <li><a href="https://x.com/WHO">X</a></li>
+                    <li><a href="https://www.instagram.com/who/?hl=en">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Content Pages</h3>
+                <ul>
+                    <li><a href="../Student 01/Content_ST1.html">Content Page 01</a></li>
+                    <li><a href="../Student 02/Content_ST2.html">Content Page 02</a></li>
+                    <li><a href="../Student 03/content.html">Content Page 03</a></li>
+                    <li><a href="../Student 04/Content_ST4.html">Content Page 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Validation Pages</h3>
+                <ul>
+                    <li><a href="../Student 01/validation_ST1.html">Validation Page 01</a></li>
+                    <li><a href="../Student 02/validation_ST2.html">Validation Page 02</a></li>
+                    <li><a href="../Student 03/validation_ST3.html">Validation Page 03</a></li>
+                    <li><a href="../Student 04/validation_ST4.html">Validation Page 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Other Links</h3>
+                <ul>
+                    <li><a href="../Student 01/volunteer.html">Volunteer Page</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">User Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 01/pageEditor_ST1.html">Editor Page</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Editor</h3>
+                <ul>
+                    <li><a href="../Student 01/pageEditor_ST1.html">Student 1 Editor</a></li>
+                    <li><a href="../Student 02/pageEditor_ST2.html">Student 2 Editor</a></li>
+                    <li><a href="../Student 03/pageEditor_ST3.html">Student 3 Editor</a></li>
+                    <li><a href="../Student 04/pageEditor_ST4.html">Student 4 Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Volunteer Program</p>
+    </footer>
+</body>
+</html>

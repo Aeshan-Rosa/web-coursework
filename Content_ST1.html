@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="Contents_ST1.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Student 02/home.html">Home</a></li>
+                    <li><a href="../Student 01/volunteer.html">Volunteer</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 03/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <h1>Protecting whats pretious</h1>
+    <section class="top_para">
+        <h3><a href="#safe-practices">Marine Biodiversity</a></h3>
+        <p>Marine biodiversity is the variety of life in the ocean, from tiny plankton to giant whales. Oceans host millions of species across different ecosystems like coral reefs and deep seas. This biodiversity helps keep the planet healthy by supporting food chains and producing oxygen. Protecting it is vital for both marine life and humans.</p>
+        <h3><a href="#wonders-under-sea">Varients under the sea</a></h3>
+        <p>Variants under the sea refer to the different environments and species found in ocean ecosystems. These include coral reefs, deep-sea zones, open oceans, and coastal areas, each with unique conditions and life forms. From colorful fish to strange deep-sea creatures, the variety is vast. These differences help maintain balance in marine life and support the planet's health.</p>
+        
+        <div class="video-container">
+        <video id="myVideo" class="video-preview" autoplay muted loop playsinline>
+            <source src="Videos/st_1_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </section>
+    
+        <!-- Safe Marine Practices Section -->
+    <section id="safe-practices">
+        <h2>Marine biodiversity</h2>
+        <p>Marine biodiversity is the wide range of life found in the ocean, including fish, corals, sea plants, and tiny organisms like plankton. Each ocean zone, from shallow reefs to deep-sea trenches, hosts different species adapted to their environments. :</p>
+        <ul>
+            <li><strong>Coral reefs:</strong> These vibrant underwater ecosystems are home to thousands of marine species, including fish, crustaceans, and mollusks.</li>
+            <li><strong>Deep-sea creatures:</strong> In the darkest parts of the ocean, unique species like anglerfish and giant squids have adapted to extreme conditions.</li>
+            <li><strong>Plankton:</strong> Though tiny, plankton are the foundation of the ocean food chain and play a major role in producing oxygen.</li>
+            <li><strong>Marine mammals:</strong> Whales, dolphins, and seals are important members of ocean life and help maintain balance in marine ecosystems.</li>
+        </ul>
+        
+
+        <div class="image-gallery">
+            <img src="images/marineBD.jpeg" alt="Marine life in coral reef" class="rounded">
+            <img src="images/marineBD_2.jpg" alt="Snorkeling in a protected area" class="rounded">
+            <img src="images/marineBD_3.jpg" alt="Responsible diver with marine life" class="rounded">
+            <img src="images/marineBD_4.jpeg" alt="Plastic waste in ocean" class="rounded">
+            <img src="images/marineBD_5.webp" alt="endangers fish" class="rounded">
+            <img src="images/marineBD_6.jpg" alt="Marine protected area sign" class="rounded">
+        </div>
+    </section>
+
+    <!-- Wonders Under the Sea Section -->
+    <section id="wonders-under-sea">
+        <h2>Variants Under the Sea</h2>
+        <p>The ocean is made up of many unique zones and environments, each with its own features and marine life. From shallow coastal waters to the deepest parts of the ocean, these variants shape the diversity of life below the surface. Below are some major underwater zones and habitats:</p>
+        <ul>
+            <li><strong>Coral Reefs:</strong> Found in warm, shallow waters, these colorful ecosystems are home to a wide range of marine species.</li>
+            <li><strong>Open Ocean (Pelagic Zone):</strong> This vast, deep area is where large marine animals like whales, sharks, and tuna roam.</li>
+            <li><strong>Deep Sea (Abyssal Zone):</strong> Located thousands of meters below the surface, this cold and dark area hosts strange creatures adapted to extreme pressure.</li>
+            <li><strong>Kelp Forests:</strong> These underwater forests made of large seaweed provide food and shelter for many fish and marine mammals.</li>
+            <li><strong>Mangrove Forests:</strong> Found along tropical coasts, mangroves are crucial for young fish and protect shorelines from erosion.</li>
+            <li><strong>Seagrass Beds:</strong> These underwater meadows support many marine animals and help improve water quality.</li>
+            <li><strong>Polar Waters:</strong> Cold ocean regions near the poles are home to unique animals like penguins, seals, and icefish.</li>
+        </ul>
+        
+
+        <div class="image-gallery">
+            <img src="images/diversity_1.jpeg" alt="Vibrant coral reef" class="rounded">
+            <img src="images/diversity_2.jpg" alt="Underwater cave" class="rounded">
+            <img src="images/diversity_3.webp" alt="Shipwreck with marine life" class="rounded">
+            <img src="images/diversity_4.avif" alt="Deep sea vent" class="rounded">
+            <img src="images/diversity_5.jpg" alt="Blue hole underwater" class="rounded">
+        </div>
+    </section>
+
+    <!-- "Go to Top" Button -->
+    <button id="goTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Go to Top</button>
+
+    <div id="videoModal" class="video-modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <video id="fullVideo" controls autoplay>
+            <source src="Videos/st_1_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script>
+        const videoPreview = document.getElementById('myVideo');
+        const modal = document.getElementById('videoModal');
+        const fullVideo = document.getElementById('fullVideo');
+    
+        videoPreview.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            fullVideo.currentTime = videoPreview.currentTime;
+            fullVideo.muted = false;
+            fullVideo.play();
+        });
+    
+        function closeModal() {
+            modal.style.display = 'none';
+            fullVideo.pause();
+        }
+    
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/WHO/">Facebook</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=world+health+organization">YouTube</a></li>
+                <li><a href="https://x.com/WHO">X</a></li>
+                <li><a href="https://www.instagram.com/who/?hl=en">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Content Pages</h3>
+            <ul>
+                <li><a href="../Student 01/Content_ST1.html">Content Page 01</a></li>
+                <li><a href="../Student 02/Content_ST2.html">Content Page 02</a></li>
+                <li><a href="../Student 03/content.html">Content Page 03</a></li>
+                <li><a href="../Student 04/Content_ST4.html">Content Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Validation Pages</h3>
+            <ul>
+                <li><a href="../Student 01/validation_ST1.html">Validation Page 01</a></li>
+                <li><a href="../Student 02/validation_ST2.html">Validation Page 02</a></li>
+                <li><a href="../Student 03/validation_ST3.html">Validation Page 03</a></li>
+                <li><a href="../Student 04/validation_ST4.html">Validation Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="../Student 01/volunteer.html">Volunteer Page</a></li>
+                <li><a href="../Student 02/table.html">Table</a></li>
+                <li><a href="../Student 04/profile.html">User Profile</a></li>
+                <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                <li><a href="../Student 01/pageEditor_ST1.html">Editor Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Editor</h3>
+            <ul>
+                <li><a href="../Student 01/pageEditor_ST1.html">Student 1 Editor</a></li>
+                <li><a href="../Student 02/pageEditor_ST2.html">Student 2 Editor</a></li>
+                <li><a href="../Student 03/pageEditor_ST3.html">Student 3 Editor</a></li>
+                <li><a href="../Student 04/pageEditor_ST4.html">Student 4 Editor</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2025 Volunteer Program</p>
+</footer>
+</html>

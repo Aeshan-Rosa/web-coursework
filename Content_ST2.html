@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="Contents_ST2.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Student 02/home.html">Home</a></li>
+                    <li><a href="../Student 01/volunteer.html">Volunteer</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 03/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <h1>Protecting whats pretious</h1>
+    <section class="top_para">
+        <h3><a href="#ocean-pollution">Ocean Pollution</a></h3>
+        <p>Ocean pollution is the contamination of the sea by harmful substances like plastic, oil, chemicals, and waste. It affects marine life, damages ecosystems, and even impacts human health through the seafood we eat. Plastic pollution is one of the biggest threats, harming animals that mistake it for food. Reducing waste and protecting the ocean are vital for a cleaner, healthier planet.</p>
+        <h3><a href="#inland-water-pollution">Inland Water Pollution</a></h3>
+        <p>Inland water pollution is the contamination of rivers, lakes, and streams by harmful substances such as chemicals, sewage, and plastic waste. It affects freshwater ecosystems, harms aquatic life, and can make water unsafe for drinking and agriculture. Agricultural runoff and industrial waste are major sources of this pollution. Protecting inland water sources is essential for both environmental health and human well-being.</p>
+        
+        <div class="video-container">
+        <video id="myVideo" class="video-preview" autoplay muted loop playsinline>
+            <source src="Videos/st_2_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </section>
+    
+        <!-- Safe Marine Practices Section -->
+    <section id="safe-practices">
+        <h2>Ocean Pollution Types</h2>
+        <p>Ocean pollution is a major threat to marine ecosystems and human health. Different types of pollutants harm the ocean and its inhabitants, ranging from plastics to chemicals. Each type of pollution affects marine life in unique ways:</p>
+        <ul>
+            <li><strong>Plastic pollution:</strong> Plastic waste, including bottles, bags, and microplastics, pollutes oceans and harms marine animals that ingest or become entangled in it.</li>
+            <li><strong>Oil spills:</strong> Oil from ships, rigs, and accidents creates slicks on the water's surface, suffocating marine life and damaging habitats.</li>
+            <li><strong>Chemical runoff:</strong> Fertilizers, pesticides, and other toxic chemicals from agriculture wash into the sea, causing algal blooms and disrupting marine ecosystems.</li>
+            <li><strong>Sewage and wastewater:</strong> Untreated sewage and industrial waste dumped into the ocean spread diseases and pollute water, affecting aquatic life and human health.</li>
+        </ul>
+        
+
+        <div class="image-gallery">
+            <img src="images/pollution_1.jpg" alt="Marine life in coral reef" class="rounded">
+            <img src="images/pollution_2.jpg" alt="Snorkeling in a protected area" class="rounded">
+            <img src="images/pollution_3.jpg" alt="Responsible diver with marine life" class="rounded">
+            <img src="images/pollution_4.jpg" alt="Plastic waste in ocean" class="rounded">
+            <img src="images/pollution_5.jpg" alt="endangers fish" class="rounded">
+            <img src="images/pollution_6.jpg" alt="Marine protected area sign" class="rounded">
+        </div>
+    </section>
+
+    <!-- Wonders Under the Sea Section -->
+    <section id="wonders-under-sea">
+        <h2>Inland Water Pollution</h2>
+        <p>Inland water pollution refers to the contamination of rivers, lakes, and streams by various harmful substances. These pollutants damage freshwater ecosystems and threaten the species that depend on them. Below are some major types of inland water pollution:</p>
+        <ul>
+            <li><strong>Agricultural Runoff:</strong> Chemicals such as fertilizers, pesticides, and herbicides from farming wash into rivers and lakes, causing nutrient pollution and harmful algal blooms.</li>
+            <li><strong>Sewage and Wastewater:</strong> Untreated or inadequately treated sewage and wastewater often enter inland water systems, leading to contamination and the spread of diseases.</li>
+            <li><strong>Industrial Waste:</strong> Factories often release toxic chemicals and heavy metals like mercury and lead into rivers, harming aquatic life and polluting the water.</li>
+            <li><strong>Plastic Waste:</strong> Plastic bottles, bags, and other debris are commonly found in lakes and rivers, posing threats to wildlife that ingest or become trapped in the waste.</li>
+            <li><strong>Oil and Grease:</strong> Spills from vehicles, machinery, and industrial operations release oil and grease into freshwater bodies, which disrupt ecosystems and harm animals.</li>
+            <li><strong>Thermal Pollution:</strong> Heated water released by power plants raises water temperatures in rivers and lakes, which can negatively affect fish and other aquatic species.</li>
+        </ul>
+        
+
+        <div class="image-gallery">
+            <img src="images/pollution_7.png" alt="Vibrant coral reef" class="rounded">
+            <img src="images/pollution_9.jpg" alt="Underwater cave" class="rounded">
+            <img src="images/pollutioin_8.jpg" alt="Shipwreck with marine life" class="rounded">
+            <img src="images/pollution_10.webp" alt="Deep sea vent" class="rounded">
+            <img src="images/pollution_11.jpg" alt="Blue hole underwater" class="rounded">
+        </div>
+    </section>
+
+    <!-- "Go to Top" Button -->
+    <button id="goTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Go to Top</button>
+
+    <div id="videoModal" class="video-modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <video id="fullVideo" controls autoplay>
+            <source src="Videos/st_2_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script>
+        const videoPreview = document.getElementById('myVideo');
+        const modal = document.getElementById('videoModal');
+        const fullVideo = document.getElementById('fullVideo');
+    
+        videoPreview.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            fullVideo.currentTime = videoPreview.currentTime;
+            fullVideo.muted = false;
+            fullVideo.play();
+        });
+    
+        function closeModal() {
+            modal.style.display = 'none';
+            fullVideo.pause();
+        }
+    
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/WHO/">Facebook</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=world+health+organization">YouTube</a></li>
+                <li><a href="https://x.com/WHO">X</a></li>
+                <li><a href="https://www.instagram.com/who/?hl=en">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Content Pages</h3>
+            <ul>
+                <li><a href="../Student 01/Content_ST1.html">Content Page 01</a></li>
+                <li><a href="../Student 02/Content_ST2.html">Content Page 02</a></li>
+                <li><a href="../Student 03/content.html">Content Page 03</a></li>
+                <li><a href="../Student 04/Content_ST4.html">Content Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Validation Pages</h3>
+            <ul>
+                <li><a href="../Student 01/validation_ST1.html">Validation Page 01</a></li>
+                <li><a href="../Student 02/validation_ST2.html">Validation Page 02</a></li>
+                <li><a href="../Student 03/validation_ST3.html">Validation Page 03</a></li>
+                <li><a href="../Student 04/validation_ST4.html">Validation Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="../Student 01/volunteer.html">Volunteer Page</a></li>
+                <li><a href="../Student 02/table.html">Table</a></li>
+                <li><a href="../Student 04/profile.html">User Profile</a></li>
+                <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                <li><a href="../Student 01/pageEditor_ST1.html">Editor Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Editor</h3>
+            <ul>
+                <li><a href="../Student 01/pageEditor_ST1.html">Student 1 Editor</a></li>
+                <li><a href="../Student 02/pageEditor_ST2.html">Student 2 Editor</a></li>
+                <li><a href="../Student 03/pageEditor_ST3.html">Student 3 Editor</a></li>
+                <li><a href="../Student 04/pageEditor_ST4.html">Student 4 Editor</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2025 Volunteer Program</p>
+</footer>
+</html>

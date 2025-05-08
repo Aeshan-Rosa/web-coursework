@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #112e49;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #ffffff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  margin-right: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.logo h1 {
+  font-size: 28px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  background-color: #ffffff;
+  color: #1e3c72;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+p{
+  justify-content: center;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0277bd;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("Images/Splash.gif") no-repeat center center/cover;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+  background-color: #004d70;
+}
+
+.hero::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Identity Section */
+.identity {
+  background: url("") no-repeat center center/cover;
+  padding: 80px 20px;
+  background-color: rgba(5, 32, 75, 0.755);
+}
+
+.identity .content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.identity h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.identity p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Mission Section */
+.mission {
+  background-color: #0b3a53;
+  padding: 60px 20px;
+  color: #e0f7fa;
+}
+
+.mission h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Explore Section */
+.explore-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #051c2ec1;
+}
+
+.explore-card {
+  background: #ffffff14;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  color: #ffffff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.explore-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(111, 202, 255, 0.38);
+}
+
+.explore-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.explore-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.explore-card a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.explore-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #333333 0%, #555555 100%);
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(7, 44, 90, 0.546) 0%, rgba(6, 40, 77, 0.231) 80%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links a:hover {
+  background: #2c43c7;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.footer-section h3 {
+  margin-bottom: 0.7rem;
+  color: #00bcd4;
+  font-size: 1.1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-section ul li a {
+  color: #e0f7fa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #00e5ff;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  border-top: 1px solid #1b3a57;
+  padding-top: 1rem;
+  color: #b0c7db;
+}
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .identity h2,
+  .mission h2 {
+    font-size: 26px;
+  }
+
+  .mission p,
+  .identity p {
+    font-size: 16px;
+  }
+}

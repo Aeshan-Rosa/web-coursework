@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="Contents_ST4.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Student 02/home.html" class="active">Home</a></li>
+                    <li><a href="../Student 01/volunteer.html">Volunteer</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 03/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <h1>Protecting whats pretious</h1>
+    <section class="top_para">
+        <h3><a href="#safe-practices">Safe Marine Practices</a></h3>
+        <p>Protecting life underwater is essential for maintaining healthy ocean ecosystems. Safe marine practices, such as reducing plastic waste, practicing responsible fishing, and respecting marine protected areas, help safeguard marine life. Avoiding disturbance to marine creatures and coral reefs is crucial to preventing damage to delicate habitats. By adopting sustainable practices, we can reduce harm to the ocean and ensure the survival of diverse marine species.</p>
+        <h3><a href="#wonders-under-sea">Wonders Under the Sea</a></h3>
+        <p>The ocean is home to a vast array of life forms, from colorful coral reefs teeming with fish to the mysterious deep sea. Coral reefs are rich in biodiversity, supporting numerous species of fish, invertebrates, and marine mammals. In the deep sea, unique creatures like bioluminescent organisms thrive in extreme conditions. The diversity of life under the sea is astonishing, and preserving it is vital for maintaining the health of our oceans.</p>
+        
+        <div class="video-container">
+        <video id="myVideo" class="video-preview" autoplay muted loop playsinline>
+            <source src="Videos/st_4_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </section>
+    
+        <!-- Safe Marine Practices Section -->
+    <section id="safe-practices">
+        <h2>Safe Marine Practices</h2>
+        <p>Marine conservation is crucial for the health of our oceans. It's important to follow safe marine practices to protect both marine life and the environment. Here are some key practices:</p>
+        <ul>
+            <li><strong>Avoid touching or disturbing marine creatures:</strong> Touching or capturing marine animals can harm them and disrupt their natural behavior.</li>
+            <li><strong>Reduce plastic waste:</strong> Always dispose of your trash responsibly and try to avoid single-use plastics that end up polluting the ocean.</li>
+            <li><strong>Respect marine protected areas:</strong> These areas are established to conserve vulnerable ecosystems. Always stay out of restricted zones.</li>
+            <li><strong>Practice responsible snorkeling and diving:</strong> Stay in designated areas, and avoid disturbing the underwater ecosystem.</li>
+        </ul>
+
+        <div class="image-gallery">
+            <img src="images/marine_life.jpg" alt="Marine life in coral reef" class="rounded">
+            <img src="images/snorkeling.jpg" alt="Snorkeling in a protected area" class="rounded">
+            <img src="images/diver.jpg" alt="Responsible diver with marine life" class="rounded">
+            <img src="images/plastic.webp" alt="Plastic waste in ocean" class="rounded">
+            <img src="images/endangerd.jpeg" alt="endangers fish" class="rounded">
+            <img src="images/marine_protected.webp" alt="Marine protected area sign" class="rounded">
+        </div>
+    </section>
+
+    <!-- Wonders Under the Sea Section -->
+    <section id="wonders-under-sea">
+        <h2>Wonders Under the Sea</h2>
+        <p>The underwater world is full of incredible sights. From the majestic coral reefs to the fascinating underwater caves, the ocean offers a stunning variety of environments. Below are some of the most awe-inspiring wonders of the sea:</p>
+        <ul>
+            <li><strong>Coral Reefs:</strong> Coral reefs are some of the most diverse ecosystems on Earth, home to thousands of marine species.</li>
+            <li><strong>Underwater Caves:</strong> Mysterious, beautiful, and often filled with fascinating rock formations, these caves provide unique ecosystems.</li>
+            <li><strong>Shipwrecks:</strong> Sunken ships hold secrets of maritime history and are often teeming with marine life.</li>
+            <li><strong>Deep Sea Vents:</strong> These underwater geysers support a variety of life forms that can thrive in extreme conditions of high pressure and temperature.</li>
+            <li><strong>Blue Holes:</strong> These giant underwater sinkholes are known for their deep, clear blue water, making them a unique dive site.</li>
+            <li><strong>Whale Migration Routes:</strong> The migration routes of whales are one of nature’s great wonders, crossing vast oceanic distances.</li>
+            <li><strong>Underwater Volcanoes:</strong> These volcanoes create new islands and ecosystems in the ocean.</li>
+        </ul>
+
+        <div class="image-gallery">
+            <img src="images/coral_reef.webp" alt="Vibrant coral reef" class="rounded">
+            <img src="images/reef.jpg" alt="Underwater cave" class="rounded">
+            <img src="images/shipwreck.avif" alt="Shipwreck with marine life" class="rounded">
+            <img src="images/volcano.jpeg" alt="Deep sea vent" class="rounded">
+            <img src="images/blue_hall.jpg" alt="Blue hole underwater" class="rounded">
+        </div>
+    </section>
+
+    <!-- "Go to Top" Button -->
+    <button id="goTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Go to Top</button>
+
+    <div id="videoModal" class="video-modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <video id="fullVideo" controls autoplay>
+            <source src="Videos/st_4_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script>
+        const videoPreview = document.getElementById('myVideo');
+        const modal = document.getElementById('videoModal');
+        const fullVideo = document.getElementById('fullVideo');
+    
+        videoPreview.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            fullVideo.currentTime = videoPreview.currentTime;
+            fullVideo.muted = false;
+            fullVideo.play();
+        });
+    
+        function closeModal() {
+            modal.style.display = 'none';
+            fullVideo.pause();
+        }
+    
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/WHO/">Facebook</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=world+health+organization">YouTube</a></li>
+                <li><a href="https://x.com/WHO">X</a></li>
+                <li><a href="https://www.instagram.com/who/?hl=en">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Content Pages</h3>
+            <ul>
+                <li><a href="../Student 01/Content_ST1.html">Content Page 01</a></li>
+                <li><a href="../Student 02/Content_ST2.html">Content Page 02</a></li>
+                <li><a href="../Student 03/content.html">Content Page 03</a></li>
+                <li><a href="../Student 04/Content_ST4.html">Content Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Validation Pages</h3>
+            <ul>
+                <li><a href="../Student 01/validation_ST1.html">Validation Page 01</a></li>
+                <li><a href="../Student 02/validation_ST2.html">Validation Page 02</a></li>
+                <li><a href="../Student 03/validation_ST3.html">Validation Page 03</a></li>
+                <li><a href="../Student 04/validation_ST4.html">Validation Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="../Student 01/volunteer.html">Volunteer Page</a></li>
+                <li><a href="../Student 02/table.html">Table</a></li>
+                <li><a href="../Student 04/profile.html">User Profile</a></li>
+                <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                <li><a href="../Student 01/pageEditor_ST1.html">Editor Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Editor</h3>
+            <ul>
+                <li><a href="../Student 01/pageEditor_ST1.html">Student 1 Editor</a></li>
+                <li><a href="../Student 02/pageEditor_ST2.html">Student 2 Editor</a></li>
+                <li><a href="../Student 03/pageEditor_ST3.html">Student 3 Editor</a></li>
+                <li><a href="../Student 04/pageEditor_ST4.html">Student 4 Editor</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2025 Volunteer Program</p>
+</footer>
+</html>

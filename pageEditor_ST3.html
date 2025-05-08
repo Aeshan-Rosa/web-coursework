@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/pageEditor_validator.css"> <!-- External CSS link -->
+</head>
+<body>
+    
+    <!-- Updated header to be consistent with the team website -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Student 02/home.html">Home</a></li>
+                    <li><a href="../Student 01/volunteer.html">Volunteer</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 03/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="stud">
+        <h2>Gayani Baddhakaranage, Student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Updated sections for the pages Student 3 was responsible for -->
+
+            <section>
+                <h2 id="feedback">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Feedback page was developed using a combination of HTML5 semantic elements and CSS styling to create an intuitive and user-friendly form interface. The page structure utilizes <code>fieldset</code> elements with distinct <code>legend</code> tags to organize form sections logically (personal information, feedback details, user experience, and attachments). Each section is color-coded with different background colors using rgba values (e.g., rgba(70, 130, 180, 0.1)) to visually separate content areas.</p>
+                        
+                        <p>The form implements various input types including text, email, tel, textarea, select, checkbox, radio, file, date, and datetime-local to collect comprehensive user feedback. Form validation is enhanced through HTML5 attributes like <code>required</code> and <code>pattern</code> to ensure data integrity. For user interaction, custom styling was applied to form elements with consistent padding and border-radius properties, along with focus states using <code>box-shadow: 0 0 5px rgba(0, 105, 148, 0.5)</code> for improved accessibility.</p>
+                        
+                        <p>A standout feature is the interactive star rating system implemented with CSS, using <code>background-image</code> properties and transitions. Submit and cancel buttons have hover effects using <code>transform: translateY(-2px)</code> to provide subtle visual feedback. The form is made responsive with flexible width settings (90% with max-width: 800px) to ensure usability across various devices.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>Accessibility was a core consideration in developing the Feedback page. All form controls have properly associated <code>label</code> elements with explicit relationships to their respective input fields. Required fields are clearly marked using the <code>::after</code> pseudo-element with appropriate visual indicators. Color contrast ratios meet WCAG AA standards for all text elements against their backgrounds.</p>
+                        
+                        <p>Keyboard navigation is fully supported with visible focus states for all interactive elements. Form validation provides clear error messages and focuses on the first field with an error when submission is attempted. ARIA attributes are used where necessary to enhance screen reader compatibility, particularly for the custom star rating system which includes <code>aria-label</code> attributes for each rating option.</p>
+                        
+                        <p>The responsive design ensures that form elements maintain appropriate sizing and spacing on all devices, preventing touch target issues on mobile. Text inputs have appropriate font sizes to ensure readability, and form instructions use clear, concise language to guide users through completion.</p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><b><a href="validation_ST3.html#feedbackVal"> link to the validation page</a></b>, use the marker to jump to the corresponding section of the validation page.</p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><b><a href="feedback.html"> link to the Feedback page .</a></b></p>
+            </section>
+
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Team page showcases team members using an interactive card-based layout with flip animation effects. The HTML structure utilizes semantic elements for proper document outline, with nested <code>div</code> elements creating the card interface components. Each team member card contains front and back faces, with the front displaying a profile image and basic information, while the back reveals detailed responsibilities and expertise.</p>
+                        
+                        <p>CSS techniques applied include perspective-based 3D animations using <code>transform: rotateY(180deg)</code> for the card flipping effect. The layout is made responsive through Flexbox properties (<code>display: flex, flex-wrap: wrap</code>), allowing cards to reflow naturally across different screen sizes. Visual depth is created with <code>box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)</code> applied to cards, enhanced on hover with subtle scaling (<code>transform: scale(1.05)</code>).</p>
+                        
+                        <p>Interactive elements use smooth transitions (<code>transition: transform 0.3s ease</code>) for all state changes. The team page implements a branded color scheme with hex colors (#3914ab, #4a7c59, #006994) that aligns with the overall site design. Absolute positioning is used for overlay detail cards (<code>position: absolute</code>) to maintain clean layout while providing additional information on interaction.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>The Team page addresses accessibility through several key implementations. All team member images include descriptive <code>alt</code> attributes that convey both visual content and context. The interactive card elements are enhanced with <code>tabindex</code> attributes to ensure proper keyboard navigation sequence, and <code>focus-within</code> selectors trigger the same visual effects as hover states for keyboard users.</p>
+                        
+                        <p>Semantic HTML5 structure with appropriate heading hierarchy (<code>h1</code>, <code>h3</code>, <code>h4</code>) maintains content organization for screen readers. Color contrast is maintained at WCAG AA standards across all text content against backgrounds. Interactive elements maintain a consistent focus order that follows the visual layout, and focus states are made highly visible with border highlighting.</p>
+                        
+                        <p>For users who may have motion sensitivity, the animation effects can be disabled using the CSS <code>prefers-reduced-motion</code> media query, which replaces the flip animation with a simpler opacity transition when selected in user preferences.</p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><b><a href="validation_ST3.html#teamVal"> link to the validation page</a></b>, use the marker to jump to the corresponding section of the validation page.</p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><b><a href="team.html"> link to the Team page .</a></b></p>
+            </section>
+
+            <section>
+                <h2 id="content">Coral Reefs content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Coral Reefs content page was developed as an informative resource combining educational content with engaging visual elements. The HTML structure implements semantic tags including <code>header</code>, <code>main</code>, <code>section</code>, and <code>footer</code> to create a logical document outline. Internal anchor links with descriptive IDs (<code>#biodiversity</code>, <code>#formation</code>, etc.) allow for easy navigation within the extensive content.</p>
+                        
+                        <p>CSS techniques include a full-width cover image with overlay text using linear gradient backgrounds (<code>linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3))</code>) to ensure text readability. The page employs responsive grid layouts with <code>grid-template-columns</code> and <code>auto-fit</code> properties for adaptive content cards. Hover animations utilize transform properties (<code>transform: translateY(-5px)</code>) to create subtle interactive effects when users explore different sections.</p>
+                        
+                        <p>Visual hierarchy is established through fact boxes with colored borders and contrasting backgrounds, alongside prominent statistics displays with large numbers and supporting text. The ocean-themed color palette (#006994, #e6f7ff) reinforces the content theme while ensuring visual cohesion with the site's overall design. Navigation is enhanced with a fixed position "back to top" button that uses <code>position: fixed</code> to remain accessible throughout the lengthy content.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>The Coral Reefs page implements numerous accessibility features to ensure content availability to all users. Images include comprehensive <code>alt</code> text attributes that describe both the visual content and its contextual significance to the educational material. The text content maintains appropriate heading structure with proper nesting of <code>h1</code> through <code>h3</code> elements for clear content hierarchy.</p>
+                        
+                        <p>Internal navigation is enhanced with descriptive link text and skip-to-content functionality allowing keyboard users to bypass repetitive navigation elements. Color contrast meets WCAG AA standards for all text content, with special attention to ensuring readability of text overlaid on the cover image through gradient backgrounds. Font Awesome icons used for visual enhancement include appropriate <code>aria-hidden="true"</code> attributes where they are decorative, with additional text descriptions where they convey meaning.</p>
+                        
+                        <p>The responsive design ensures content remains accessible at all viewport sizes without horizontal scrolling or overlapping elements. Media queries adjust spacing, font sizes, and grid layouts to maintain readability on smaller screens. Interactive elements maintain visible focus states and sufficient touch target sizes for mobile users.</p>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><b><a href="validation_ST3.html#contentVal">link to the validation page</a></b>, use the link to jump to the corresponding section of the validation page.</p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><b><a href="content.html"> link to the Content page .</a></b></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the development process, I encountered several challenges that provided valuable learning opportunities:</p>
+                    
+                    <h3>Challenges Faced</h3>
+                    <ul>
+                        <li><strong>Cross-browser compatibility:</strong> Ensuring consistent display across different browsers proved challenging, particularly with the 3D card flip animations on the Team page and custom form elements in the Feedback form. Firefox and Safari handled perspective and transform properties differently than Chrome.</li>
+                        <li><strong>Responsive design implementation:</strong> Creating a responsive grid layout for the Team cards while maintaining the flip animation effect required careful consideration of viewport sizes and interaction methods.</li>
+                        <li><strong>Form validation complexity:</strong> Balancing comprehensive validation with user-friendly error handling in the Feedback form required multiple approaches to ensure data integrity without frustrating users.</li>
+                    </ul>
+                    
+                    <h3>Solutions Applied</h3>
+                    <ul>
+                        <li>Implemented feature detection rather than browser detection, allowing for graceful fallbacks where certain CSS properties weren't fully supported.</li>
+                        <li>Adopted a mobile-first approach with progressive enhancement, ensuring core functionality remained intact while adding visual enhancements for larger screens.</li>
+                        <li>Combined HTML5 validation attributes with custom validation patterns to provide immediate feedback while maintaining data consistency.</li>
+                    </ul>
+                    
+                    <h3>Key Lessons Learned</h3>
+                    <ul>
+                        <li>Thorough planning before implementation significantly reduces development time and minimizes the need for major revisions later in the process.</li>
+                        <li>Regular user testing throughout development helps identify usability issues early, particularly with interactive elements like the card flip animations.</li>
+                        <li>Accessibility considerations should be integrated from the beginning of the design process rather than added as an afterthought.</li>
+                        <li>Documentation of code decisions and design choices improves team collaboration and makes future maintenance more efficient.</li>
+                    </ul>
+                    
+                    <p>These experiences have deepened my understanding of front-end development best practices and reinforced the importance of balancing visual design with technical functionality and accessibility.</p>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>All pages developed comply with Janet regulations governing web page publication through several implemented measures:</p>
+                    
+                    <ul>
+                        <li><strong>Acceptable Use Policy (AUP) compliance:</strong> All content adheres strictly to Janet's AUP, ensuring educational relevance and appropriate content for an academic environment. The Coral Reefs page in particular focuses on factual, educational content with properly cited sources for all statistical information.</li>
+                        <li><strong>Security protocols:</strong> The Feedback form implements proper validation techniques to prevent common security vulnerabilities including cross-site scripting (XSS) and cross-site request forgery (CSRF). Input sanitization is applied to all form fields.</li>
+                        <li><strong>Data protection:</strong> Form submission handling follows data protection principles with clear user consent mechanisms and transparent information about how submitted data will be used.</li>
+                        <li><strong>Attribution:</strong> All third-party resources used across the pages, including Font Awesome icons, Google Fonts, and images, are properly licensed and attributed within both the code comments and the visible references section.</li>
+                        <li><strong>Network efficiency:</strong> Image resources are optimized to reduce file sizes and minimize bandwidth usage on the Janet network, with appropriate dimensions and compression levels applied.</li>
+                        <li><strong>Accessibility compliance:</strong> All pages meet accessibility requirements as specified by Janet regulations, including proper semantic structure, keyboard navigation, and screen reader compatibility.</li>
+                    </ul>
+                    
+                    <p>Regular compliance reviews were conducted throughout development to ensure all pages meet the required standards, and documentation has been maintained to facilitate future updates while preserving compliance.</p>
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <ul class="ref">
+                    <li>Font Awesome (2025) <i>Font Awesome 6.5.2.</i> Available at: <a href="https://fontawesome.com/">https://fontawesome.com/</a> (Last accessed: 9 Mar 2025).</li>
+                    <li>Google Fonts (2025) <i>Poppins Font Family.</i> Available at: <a href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a> (Last accessed: 9 Mar 2025).</li>
+                    <li>Unsplash (2025) <i>Unsplash - Free Images & Pictures.</i> Available at: <a href="https://unsplash.com/">https://unsplash.com/</a> (Last accessed: 9 Mar 2025).</li>
+                    <li>NOAA (2025) <i>NOAA Coral Reef Information System.</i> Available at: <a href="https://www.coris.noaa.gov/">https://www.coris.noaa.gov/</a> (Last accessed: 9 Mar 2025).</li>
+                    <li>CSS-Tricks (2025) <i>Card Flip Animation.</i> Available at: <a href="https://css-tricks.com/card-flip-effect-css/">https://css-tricks.com/card-flip-effect-css/</a> (Last accessed: 9 Mar 2025).</li>
+                    <li>MDN Web Docs (2025) <i>Form validation.</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation</a> (Last accessed: 9 Mar 2025).</li>
+                    <li>Coolors (2025) <i>Coolors - The super fast color schemes generator.</i> Available at: <a href="https://coolors.co/">https://coolors.co/</a> (Last accessed: 9 Mar 2025).</li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="../Student 01/splash.html">Splash page</a></li>
+                        <li><a href="../Student 01/volunteer.html">Volunteer page</a></li>
+                        <li><a href="../Student 01/Content_ST1.html">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="../Student 02/home.html">Home page </a></li>
+                        <li><a href="../Student 02/table.html">Table page</a></li>
+                        <li><a href="../Student 02/Content_ST2.html">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="../Student 03/feedback.html">Feedback page</a> </li>
+                        <li><a href="../Student 03/team.html">Team page</a></li>
+                        <li><a href="../Student 03/content.html">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="../Student 04/profile.html">Profile page </a></li>
+                        <li><a href="../Student 04/sitemap.html">Sitemap page</a></li>
+                        <li><a href="../Student 04/Content_ST4.html">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/WHO/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=world+health+organization">YouTube</a></li>
+                    <li><a href="https://x.com/WHO">X</a></li>
+                    <li><a href="https://www.instagram.com/who/?hl=en">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Content Pages</h3>
+                <ul>
+                    <li><a href="../Student 01/Content_ST1.html">Content Page 01</a></li>
+                    <li><a href="../Student 02/Content_ST2.html">Content Page 02</a></li>
+                    <li><a href="../Student 03/content.html">Content Page 03</a></li>
+                    <li><a href="../Student 04/Content_ST4.html">Content Page 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Validation Pages</h3>
+                <ul>
+                    <li><a href="../Student 01/validation_ST1.html">Validation Page 01</a></li>
+                    <li><a href="../Student 02/validation_ST2.html">Validation Page 02</a></li>
+                    <li><a href="../Student 03/validation_ST3.html">Validation Page 03</a></li>
+                    <li><a href="../Student 04/validation_ST4.html">Validation Page 04</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Other Links</h3>
+                <ul>
+                    <li><a href="../Student 01/volunteer.html">Volunteer Page</a></li>
+                    <li><a href="../Student 02/table.html">Table</a></li>
+                    <li><a href="../Student 04/profile.html">User Profile</a></li>
+                    <li><a href="../Student 03/feedback.html">Feedback</a></li>
+                    <li><a href="../Student 04/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student 01/pageEditor_ST1.html">Editor Page</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Editor</h3>
+                <ul>
+                    <li><a href="../Student 01/pageEditor_ST1.html">Student 1 Editor</a></li>
+                    <li><a href="../Student 02/pageEditor_ST2.html">Student 2 Editor</a></li>
+                    <li><a href="../Student 03/pageEditor_ST3.html">Student 3 Editor</a></li>
+                    <li><a href="../Student 04/pageEditor_ST4.html">Student 4 Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Volunteer Program</p>
+    </footer>
+</body>
+</html>

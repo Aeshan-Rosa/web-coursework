@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="Contents_ST3.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/fish.jpg" alt="Life Below Water">
+                <h1>Life Below Water</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <h1>Protecting whats pretious</h1>
+    <section class="top_para">
+        <h3><a href="#importance-for-humans">Importance of Oceans for Humans</a></h3>
+        <p>Oceans play a vital role in human life by producing over half of the world’s oxygen and absorbing large amounts of carbon dioxide. They provide food, jobs, and transportation routes for millions of people. Oceans also help regulate the Earth’s climate and weather patterns. Protecting the ocean means securing a healthier future for humanity.</p>
+
+        <h3><a href="#importance-for-animals">Importance of Oceans for Animals</a></h3>
+        <p>Oceans are home to countless species of animals, from tiny plankton to massive whales. These habitats provide food, shelter, and breeding grounds for marine life. Many animals depend on the balance of ocean ecosystems to survive. Keeping the oceans clean and healthy is essential for protecting biodiversity and preventing species extinction.</p>
+
+        <div class="video-container">
+        <video id="myVideo" class="video-preview" autoplay muted loop playsinline>
+            <source src="Videos/st_3_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </section>
+    
+        <!-- Safe Marine Practices Section -->
+    <section id="safe-practices">
+        <h2>Importance of the Sea to Humans</h2>
+        <p>The sea is essential to human survival and well-being. It supports life on Earth in many ways, from providing food and oxygen to regulating climate. Here are some key benefits the sea offers to people:</p>
+        <ul>
+            <li><strong>Oxygen Production:</strong> Oceans produce over half of the world’s oxygen through marine plants like phytoplankton.</li>
+            <li><strong>Climate Regulation:</strong> The sea helps balance global temperatures by absorbing heat and carbon dioxide from the atmosphere.</li>
+            <li><strong>Food Source:</strong> Millions of people rely on the sea for fish and other seafood, which are vital sources of nutrition and income.</li>
+            <li><strong>Livelihoods and Trade:</strong> Coastal and marine industries, including fishing, tourism, and shipping, provide jobs and economic opportunities worldwide.</li>
+        </ul>
+        
+        
+
+        <div class="image-gallery">
+            <img src="images/st3_1.jpg" alt="Marine life in coral reef" class="rounded">
+            <img src="images/st3_2.webp" alt="Snorkeling in a protected area" class="rounded">
+            <img src="images/st3_3.webp" alt="Responsible diver with marine life" class="rounded">
+            <img src="images/st3_4.jpg" alt="Plastic waste in ocean" class="rounded">
+            <img src="images/st3_5.jpg" alt="endangers fish" class="rounded">
+            <img src="images/st3_6.webp" alt="Marine protected area sign" class="rounded">
+        </div>
+    </section>
+
+    <!-- Wonders Under the Sea Section -->
+    <section id="wonders-under-sea">
+        <h2>Importance of Inland Water to Animals</h2>
+        <p>Inland water bodies like rivers, lakes, and wetlands are vital habitats for countless animal species. These ecosystems support a wide range of wildlife and play a key role in their survival. Below are some reasons why inland water is important to animals:</p>
+        <ul>
+            <li><strong>Habitat:</strong> Rivers and lakes provide shelter and breeding grounds for fish, amphibians, birds, and many other species.</li>
+            <li><strong>Food Source:</strong> Inland waters are rich in food, including aquatic plants, insects, and smaller animals, supporting complex food chains.</li>
+            <li><strong>Migration Paths:</strong> Many animals, such as fish and waterfowl, rely on inland water bodies as part of their migration routes.</li>
+            <li><strong>Breeding and Nesting Sites:</strong> Wetlands and riverbanks offer safe environments for animals to lay eggs, raise young, and hide from predators.</li>
+            <li><strong>Temperature and Hydration:</strong> These water bodies help regulate body temperatures and provide essential drinking water for many species.</li>
+            <li><strong>Biodiversity Hotspots:</strong> Inland waters often support a high variety of species, making them key areas for preserving biodiversity.</li>
+        </ul>
+        
+
+        <div class="image-gallery">
+            <img src="images/2_1.webp" alt="Vibrant coral reef" class="rounded">
+            <img src="images/2_2.jpg" alt="Underwater cave" class="rounded">
+            <img src="images/2_3.jpg" alt="Shipwreck with marine life" class="rounded">
+            <img src="images/2_4.jpg" alt="Deep sea vent" class="rounded">
+            <img src="images/2_5.jpg" alt="Blue hole underwater" class="rounded">
+        </div>
+    </section>
+
+    <!-- "Go to Top" Button -->
+    <button id="goTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Go to Top</button>
+
+    <div id="videoModal" class="video-modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <video id="fullVideo" controls autoplay>
+            <source src="Videos/st_3_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <script>
+        const videoPreview = document.getElementById('myVideo');
+        const modal = document.getElementById('videoModal');
+        const fullVideo = document.getElementById('fullVideo');
+    
+        videoPreview.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            fullVideo.currentTime = videoPreview.currentTime;
+            fullVideo.muted = false;
+            fullVideo.play();
+        });
+    
+        function closeModal() {
+            modal.style.display = 'none';
+            fullVideo.pause();
+        }
+    
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Content Pages</h3>
+            <ul>
+                <li><a href="#">Content Page 01</a></li>
+                <li><a href="#">Content Page 02</a></li>
+                <li><a href="#">Content Page 03</a></li>
+                <li><a href="#">Content Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Validation Pages</h3>
+            <ul>
+                <li><a href="#">Validation Page 01</a></li>
+                <li><a href="#">Validation Page 02</a></li>
+                <li><a href="#">Validation Page 03</a></li>
+                <li><a href="#">Validation Page 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="#">Volunteer Page</a></li>
+                <li><a href="#">Table</a></li>
+                <li><a href="#">User Profile</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Editor Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Editor</h3>
+            <ul>
+                <li><a href="#">Student 1 Editor</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2025 Volunteer Program</p>
+</footer>
+</html>
